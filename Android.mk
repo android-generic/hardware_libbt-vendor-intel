@@ -19,8 +19,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(BOARD_HAVE_BLUETOOTH_INTEL_ICNV), true)
-
 include $(CLEAR_VARS)
 
 LOCAL_CPP_EXTENSION := .cc
@@ -52,4 +50,3 @@ LOCAL_HEADER_LIBRARIES += libutils_headers
 
 include $(BUILD_SHARED_LIBRARY)
 
-endif # BOARD_HAVE_BLUETOOTH_INTEL_ICNV
